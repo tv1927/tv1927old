@@ -1,0 +1,298 @@
+/* Grundlayout - Anfang */
+
+html, body { height: 100%; }
+
+body {
+	margin: 0px auto;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+/*	background: #2c2c2c url(../img/bg_verein.gif); */
+	background: #000 url(../img/bg_fussball.gif);
+}
+
+#frame {
+	width: 960px;
+	margin: 0 auto;
+	border: 1px solid #686767;
+	background: #363636;
+	text-align: left;
+}
+
+.top {
+	width: 100%;
+	border-bottom: 1px solid #FFF;
+}
+
+#header {
+	width: 100%;
+	height: 180px;
+	margin: 0;
+	border-bottom: 1px solid #FFF;
+}
+
+#top_navi {
+	width: 100%;
+	height: 2.15em;
+	margin: 0;
+}
+
+#bottom_navi {
+	float: left;
+	height: 0.5em;
+	margin-top:0;
+}
+
+div#content {
+/*	width: 464px;
+	height: auto;
+	min-height: 555px;
+	float: left;
+	padding: 5px;
+
+	background: #434343;
+	border: 1px solid #676666; */
+	width: 450px;
+	min-height: 555px;
+	float: left;
+	padding: 5px;
+	margin: 0 5px;
+}
+
+div.quick_button {
+	width: 25%;
+	height: auto;
+	min-height: 565px;
+	float: left;
+	vertical-align: bottom;
+	margin: 5px -1px 0 0;
+}
+
+div#ads {
+	width: 246px;
+	height: auto;
+	min-height: 565px;
+	float: right;
+	background: transparent;
+	margin-top: 0px;
+}
+
+div#prev_next, #fbdeAPIs { display: none; }
+
+/* Hacks for IE */
+* html div#ads, div.quick_button { margin-top: 0px; }
+* html div#content { width: 460px; }
+
+/* Grundlayout - Ende */
+
+/* Formatierung Text, Links u. Überschriften - Anfang */
+
+h1 {
+	font-size: 1.3em;
+	font-weight: bold;
+/*	background: #434343;
+	border: 1px solid #676666;
+	padding: 10px;
+	margin-top: -4px; */
+}
+
+h3 {
+	font-size: 1.0em;
+}
+
+h5 {
+	font-size: 0.5em;
+}
+
+.bodytext {
+	line-height: 1.2em;
+}
+
+a:link, a:visited {
+	color: #fff;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Formatierung Text, Links u. Überschriften - Ende */
+
+/* Formatierung Horizontale Navigation - Anfang */
+
+#top_navi ul { margin: 0px; padding-left: 0px; }
+
+#top_navi li {
+	list-style-type: none;
+	float: left;
+}
+
+#top_navi li a {
+	color: #FFF;
+	float: left;
+	padding: 7px 13px 5px;
+	text-decoration: none;
+}
+
+#top_navi li a:visited {
+	color: #FFF;
+}
+
+#top_navi li a:hover {  }
+
+#top_navi li a:active {
+	text-decoration: none;
+}
+
+#top_navi li a:focus {
+	text-decoration: none;
+}
+
+
+/* Formatierung Horizontale Navigation - Ende */
+
+/* Formatierung Vertikale Quick-Link Navigation - Anfang */
+
+.quick_button ul {
+	margin: 1px;
+	margin-top: -5px;
+	font-weight: bold;
+	font-size: 24px;
+	color: #FFF; 
+}
+
+.quick_button li {
+	list-style-type: none;
+	margin-top: 5px;
+	margin-left: -40px;
+	display: block;
+	background: #353434 url(../img/quick.gif);
+	border: 1px solid #676666;
+}
+
+* html .quick_button li { margin-left: 0px; }
+
+.quick_button li a {
+	padding-top: 46px;
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	text-decoration:none;
+}
+
+.quick_button li a:visited { text-decoration:none; }
+
+.quick_button li a:hover {
+	text-decoration: none;
+	background-image: url(../img/quick_hover.gif);
+	background-color: #FFF;
+	text-decoration:none;
+}
+
+.quick_button li a:active  {
+	text-decoration: none;
+	background-image: url(../img/quick_hover.gif);
+}
+
+.quick_button li a:focus  {
+	text-decoration: none;
+	background-image: url(../img/quick_hover.gif);
+}
+
+.quick_button .quick_sub a {
+	list-style-type: none;
+	margin: 1px;
+	margin-top: 0px;
+	padding-top: 26px;
+}
+
+.quick_button .quick_sub a:hover, .active_quick_sub {
+	text-decoration: none;
+	background-image: none;
+	padding-top: 26px;
+	background-color: #F2CF6B;
+}
+
+/* Formatierung Quick-Buttons Bilder */
+.quick_button li .quick58 {	background: url(../img/quick_verein.jpg) 0 0 no-repeat; }
+.quick_button li a.quick58:hover, .quick_button li a.active_quick58:visited, .quick_button li a.active_quick58:active { background: url(../img/quick_verein.jpg) -238px 0 no-repeat; }
+
+.quick_button li .quick122 { background: url(../img/quick_fussball.jpg) 0 0 no-repeat; }
+.quick_button li a.quick122:hover, .quick_button li a.active_quick122:visited, .quick_button li a.active_quick122:active { background: url(../img/quick_fussball.jpg) -238px 0 no-repeat; }
+
+.quick_button li .quick40 {	background: url(../img/quick_kegeln.jpg) 0 0 no-repeat; }
+.quick_button li a.quick40:hover, .quick_button li a.active_quick40:visited, .quick_button li a.active_quick40:active { background: url(../img/quick_kegeln.jpg) -238px 0 no-repeat; }
+
+.quick_button li .quick31 {	background: url(../img/quick_leichtathletik.jpg) 0 0 no-repeat; }
+.quick_button li a.quick31:hover, .quick_button li a.active_quick31:visited, .quick_button li a.active_quick31:active { background: url(../img/quick_leichtathletik.jpg) -238px 0 no-repeat; }
+
+.quick_button li .quick22 {	background: url(../img/quick_theater.jpg) 0 0 no-repeat; }
+.quick_button li a.quick22:hover, .quick_button li a.active_quick22:visited, .quick_button li a.active_quick22:active { background: url(../img/quick_theater.jpg) -238px 0 no-repeat; }
+
+.quick_button li .quick13 {	background: url(../img/quick_tanzgruppe.jpg) 0 0 no-repeat; }
+.quick_button li a.quick13:hover, .quick_button li a.active_quick13:visited, .quick_button li a.active_quick13:active { background: url(../img/quick_tanzgruppe.jpg) -238px 0 no-repeat; }
+
+.quick_button li .quick4 { background: url(../img/quick_sportkids.jpg) 0 0 no-repeat; }
+.quick_button li a.quick4:hover, .quick_button li a.active_quick4:visited, .quick_button li a.active_quick4:active { background: url(../img/quick_sportkids.jpg) -238px 0 no-repeat; }
+
+/* Formatierung Vertikale Quick-Link Navigation - Ende */
+
+/* Formatierung Kontaktformular - Anfang */
+form { width: 405px; }
+fieldset { border:0; }
+textarea { overflow:auto; }
+.csc-mailform-field { clear: left; }
+
+input, textarea {
+	display: block;
+	width: 300px;
+	float: right;
+	border: 1px solid #676666;
+	background: #434343;
+	margin-top: 5px;
+	color: #fff;
+}
+
+label {
+	padding: 5px;
+	float: left;
+	text-align: left;
+}
+
+.submit, .reset {
+	background: #cccc99;
+	border: 1px solid #00cc99;
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover, select:focus, select:hover { background: #807d7d; }
+
+/* Formatierung Kontaktformular - Ende */
+
+/* Formatierung Gästebuch - Anfang */
+
+.tx-veguestbook-pi1 label { padding: 4px; }
+.tx-guestbook-field { padding:5px;}
+.dis_none { display:none; }
+
+.result, .tx-guestbook-latest {
+	background: #434343 none repeat scroll 0 0;
+	border:1px solid #676666;
+	padding: 5px;
+}
+
+.tx-srfreecap-pi2-image { margin-left: 8.5em; padding:5px 0; }
+.sr_freecap { margin-bottom:40px;}
+/* Formatierung Gästebuch - Ende */
+
+#footer {
+	width: 100%;
+	height: 25px;;
+	margin: 595px 0 0;
+	padding-top: 5px;
+	clear: left;
+	text-align: center;
+}
+
+* html #footer { margin: 15px 0 0; }

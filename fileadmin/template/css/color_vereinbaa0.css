@@ -1,0 +1,24 @@
+/* Grundlayout - Anfang */
+body { color: #FFF; }
+.top { background-color: #b77c40; }
+#header { background: #000 url(../img/header_verein.jpg) no-repeat right; }
+#top_navi { background-color: #12421c; }
+/* Grundlayout - Ende */
+
+/* Formatierung Horizontale Navigation - Anfang */
+#top_navi li {
+	border-left: 1px solid #CCCCCC;
+	list-style-type: none;
+}
+#top_navi li a { color: #FFF; }
+#top_navi li a:visited { color: #FFF; }
+#top_navi li a:hover { background-color: #0a2c11; }
+#top_navi li a:active { background-color: #0a2c11; }
+#top_navi li a:focus { background-color: #0a2c11; }
+/* Formatierung Horizontale Navigation - Ende */
+
+
+#footer {
+	background-color: #12421c;
+	border-top: #FFFFFF;
+}
